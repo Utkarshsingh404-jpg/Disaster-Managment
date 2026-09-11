@@ -1,0 +1,13 @@
+.footer {
+  background: #1f2937;
+  color: #e5e7eb;
+  text-align: center;
+  padding: 20px;
+  margin-top: 60px;
+}
+
+.footer-sub {
+  font-size: 0.85rem;
+  color: #9ca3af;
+  margin-top: 4px;
+}
