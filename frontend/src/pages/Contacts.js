@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './Pages.css';
 
-const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+const API_BASE_URL = process.env.REACT_APP_API_URL || 'https://disaster-managment-zn27.onrender.com';
 
 // Fallback national helplines shown even if backend has no data yet
 const defaultContacts = [
