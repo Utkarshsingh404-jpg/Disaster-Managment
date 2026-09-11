@@ -2,7 +2,7 @@ import React from 'react';
 import './Pages.css';
 
 // Change this to your actual backend URL when deploying
-const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+const API_BASE_URL = process.env.REACT_APP_API_URL || 'https://disaster-managment-zn27.onrender.com';
 
 function Download() {
   const handleDownload = () => {
