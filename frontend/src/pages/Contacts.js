@@ -4,7 +4,6 @@ import './Pages.css';
 
 const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
 
-// Fallback national helplines shown even if backend has no data yet
 const defaultContacts = [
   { name: 'AI Call Assistant', department: 'Emergency AI Support', phone: '073-146-23566', region: 'National' },
   { name: 'National Disaster Response', department: 'NDRF', phone: '011-24363260', region: 'National' },
@@ -30,7 +29,6 @@ function Contacts() {
       }
       setLoading(false);
     } catch (err) {
-      // Backend not reachable yet — keep showing default contacts
       setLoading(false);
     }
   };
@@ -47,4 +45,14 @@ function Contacts() {
           <div className="contact-card" key={contact._id || idx}>
             <h3>{contact.name}</h3>
             <p className="contact-dept">{contact.department} &bull; {contact.region}</p>
-            <a
+            <a href={`tel:${contact.phone}`} className="contact-phone">
+              📞 {contact.phone}
+            </a>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+export default Contacts;
