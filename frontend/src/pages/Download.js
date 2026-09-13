@@ -2,7 +2,7 @@ import React from 'react';
 import './Pages.css';
 
 // Direct GitHub Release link for the APK
-const APK_DOWNLOAD_URL = 'https://github.com/Utkarshsingh404-jpg/Disaster-Managment/releases/download/v1.0/app-release.apk';
+const APK_DOWNLOAD_URL = 'https://github.com/Utkarshsingh404-jpg/Disaster-Managment/releases/download/v1.2/app-release.apk';
 
 function Download() {
   const handleDownload = () => {
