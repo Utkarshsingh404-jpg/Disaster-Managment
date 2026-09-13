@@ -1,12 +1,12 @@
 import React from 'react';
 import './Pages.css';
 
-// Change this to your actual backend URL when deploying
-const API_BASE_URL = process.env.REACT_APP_API_URL || 'https://disaster-managment-zn27.onrender.com';
+// Direct GitHub Release link for the APK
+const APK_DOWNLOAD_URL = 'https://github.com/Utkarshsingh404-jpg/Disaster-Managment/releases/download/v1.0/app-release.apk';
 
 function Download() {
   const handleDownload = () => {
-    window.location.href = `${API_BASE_URL}/api/download-apk`;
+    window.location.href = APK_DOWNLOAD_URL;
   };
 
   return (
@@ -18,7 +18,7 @@ function Download() {
         <div className="download-card">
           <div className="app-icon">📱</div>
           <h2>Disaster Management App</h2>
-          <p className="app-meta">Version 1.0 &bull; Android &bull; ~15 MB</p>
+          <p className="app-meta">Version 1.0 &bull; Android</p>
           <button className="btn btn-primary download-btn" onClick={handleDownload}>
             ⬇ Download APK
           </button>
