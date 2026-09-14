@@ -18,7 +18,7 @@ function Download() {
         <div className="download-card">
           <div className="app-icon">📱</div>
           <h2>Disaster Management App</h2>
-          <p className="app-meta">Version 1.0 &bull; Android</p>
+          <p className="app-meta">Version 1.4 &bull; Android</p>
           <button className="btn btn-primary download-btn" onClick={handleDownload}>
             ⬇ Download APK
           </button>
